@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nomon-shared*/
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.claer{
+    clear: both;
+}
+.color-white {
+    color: #fff !important;
+}
+.cow{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.cow::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-two {
+    width: 50%;
+}
+
+.col-three {
+    /* width: 33.33333%; */
+    width: calc(100% /3);
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mar-t-8 {
+    margin-top: 8px !important;
+}
+
+.mar-t-16 {
+    margin-top: 16px !important;
+}
+/* main */
+
+#main {}
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#var,
+.subvar {
+    list-style: none;
+}
+
+#var {
+    display: inline-block;
+}
+
+#var>li {
+
+    display: inline-block;
+}
+
+#var li {
+    position: relative;
+}
+
+#var li a {
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+#var>li>a {
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#var>li:hover>a,
+#var .subvar li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#var li:hover .subvar {
+    display: block;
+}
+
+#var .subvar {
+    text-decoration: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#var .subvar a {
+    top: 100%;
+    left: 0;
+    line-height: 38px;
+    padding: 0 12px;
+    min-width: 160px;
+    color: #000;
+}
+
+.ti-angle-down {
+    font-size: 13px;
+}
+
+#header .search-stb {
+
+    float: right;
+}
+
+#header .search-stb .ti-search {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 22px;
+    font-size: 20px;
+}
+
+#header .search-stb:hover .ti-search {
+    background-color: #f44336;
+}
+
+#sider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/project2/accet/img/sider/chicago.jpg) top center / cover no-repeat;
+}
+
+#sider .sider-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+
+#sider .sider-content .heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#sider .sider-content .des {
+    font-size: 15px;
+}
+
+/* #content {
+    height: 700px;
+    background-color: antiquewhite;
+} */
+
+#content{
+
+}
+/*  */
+#content .content-section{
+     padding: 64px 0;
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+#content .content-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#content .content-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+/* content 1 */
+#band-color{
+    background-color:antiquewhite;
+}
+#content .content-text{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+
+}  
+#content .content-list{
+    margin-top: 48px;
+}
+#content .item-img{
+    width: 60%;
+    border-radius: 4px;
+}
+#content .item-name{
+    font-size: 15px;
+    padding: 15px 0;
+}
+/* end content 1 */
+/* begin content 2 */
+.tour-list{
+    background-color: #000;
+}
+/* tick-list */
+.tick-list{
+    margin-top: 30px;
+    background-color: #fff;
+    list-style: none ;
+}
+.tick-list li{
+   border-bottom: 1px solid #ddd;
+   font-size: 15px;
+   padding: 8px 16px;
+   color:#575757;
+}
+.tick-list .sold-out{
+    font-size: 15px;
+    background-color: #f44336;
+    padding: 3px 8px;
+    color: #fff;
+    margin-left: 16px;
+
+}
+.tick-list .quanlity{
+    float:right;
+    background-color: #000;
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+/* place */
+.place-list{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.place-img{
+    display: block;
+    width:100%;
+}
+.place-img:hover{
+   opacity: 0.6;
+}
+.place-content{
+    padding: 0 16px;
+    background-color: #fff;
+}
+.place-heading{
+    font-size: 15px;
+    padding-top: 15px;
+    font-weight: 600px;
+}
+.place-date{
+    font-size: 15px;
+    opacity: 0.6;
+    padding-top: 15px;
+}
+
+.place-text{
+    line-height: 1.4;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.place-buy{
+    margin: 15px 0 ;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+.place-buy:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+/*end content 2 */
+/* begin content 3 */
+/* contact-infor */
+.contact-content{
+    margin-top: 50px;
+}
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-infor i[class*="ti-"]{
+    width:30px;
+    display: inline-block;
+}
+/* contact-form */
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    width: 100%;
+    border:1px solid #ccc;
+    padding: 10px 0;
+}
+.form-submit{
+    float: right;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color:#fff;
+    padding: 10px 16px;
+    font-size: 15px;
+    
+}
+.form-submit:hover{
+    background-color: #ddd;
+    color: #000;
+}
+/* end content 3 */
+/* begin place-end-address */
+
+.place-end .map-end {
+    width: 100%;
+    margin-top: 48px;
+}
+/* end content */
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.footer-content-list a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.copyright {
+    font-size: 15px;
+    padding-top: 24px;
+    color: #575757;
+}
+.copyright a{
+    font-size: 15px;
+    padding-top: 24px;
+    color: #575757;
+}
+.copyright a:hover,
+.social-list a:hover {
+    opacity: 0.6;
+}
